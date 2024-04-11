@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    font-family: "League Spartan", sans-serif;
+    font-size:15px;
+}
+
+h1{
+    color:hsl(300, 43%, 22%);
+    font-size:50px;
+}
+
+.heading{
+    margin-left: 120px;
+    margin-top:120px;
+    margin-right:800px;
+}
+
+p{
+    color: hsl(0, 4%, 29%);
+    margin-left: 120px;
+    margin-top:10px;
+    margin-right:800px;
+}
+
+.review{
+    background-color: rgb(221, 212, 212);
+    height:60px;
+    width:400px;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    color:hsl(300, 43%, 22%);
+    font-weight:700;
+}
+
+.star{
+    position:relative;
+    margin-right:10px;
+}
+
+.review1{
+    margin-top:-150px;
+    margin-left:650px;
+}
+
+.review2{
+    margin-top:-80px;
+    margin-left:700px;
+}
+
+.review3{
+    margin-top:-10px;
+    margin-left:750px;
+}
+
+.testimonial-containers{
+    display:flex;
+}
+
+.container{
+    background-color:hsl(300, 43%, 22%);
+    height:300px;
+    width:300px;
+    border-radius: 10px;
+    margin-top:30px;
+    margin-left:100px;
+}
+
+.testimonial-containers img{
+    border-radius: 100px;
+    height:50px;
+    width:50px;
+    margin-top:30px;
+    margin-left:20px;
+}
+
+.name{
+    color: hsl(0, 0%, 100%);
+    margin-top:-45px;
+    margin-left:90px;
+}
+
+.verified{
+    color:hsl(333, 80%, 67%);
+    margin-top:5px;
+    margin-left:90px;
+}
+
+.feedback{
+    font-style:italic;
+    color: hsl(0, 0%, 100%);
+    margin-top:50px;
+    margin-left:30px;
+    margin-right:30px;
+}
