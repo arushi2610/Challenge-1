@@ -22,7 +22,18 @@ p{
     margin-right:800px;
 }
 
-.review{
+.reviews {
+    color:hsl(300, 43%, 22%);
+    font-weight:700;
+    margin-top:-220px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    position: absolute;
+}
+
+.review-section{
+    margin-top:30px;
+    margin-left: 400px;
     background-color: rgb(221, 212, 212);
     height:60px;
     width:400px;
@@ -30,14 +41,12 @@ p{
     display:flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
-    color:hsl(300, 43%, 22%);
-    font-weight:700;
+    position:relative;
 }
 
-.star{
-    position:relative;
-    margin-right:10px;
+.stars{
+    position: relative;
+    margin-right: 10px;
 }
 
 .review1{

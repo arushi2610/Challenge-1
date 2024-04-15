@@ -1,3 +1,44 @@
+// REVIEWS
+
+const reviews = [
+    {
+        rating: "Rated 5 Stars in Reviews"
+    },
+
+    {
+        rating: "Rated 5 Stars in Report Guru"
+    },
+
+    {
+        rating: "Rated 5 Stars in BestTech"
+    }
+]
+
+function repeatStars(){
+    let stars = "";
+    for (let i = 0; i < 5; i++){
+        stars += `<img src="http://127.0.0.1:5500/social-proof-section-master/images/icon-star.svg"/>`;
+    }
+    return stars;
+}
+
+const reviewTemplate = (review) => 
+`<div class="review"
+<div class="stars">${repeatStars()}</div>
+<div class="rating">${review.rating}</div>
+</div>`;
+
+let reviewOutput = "";
+
+for (const review of reviews){
+    const filledReview = reviewTemplate(review);
+    reviewOutput += filledReview;
+}
+
+document.getElementById("review-section").innerHTML = reviewOutput;
+
+// FEEDBACK
+
 const testimonials = [
     {
         image: `http://127.0.0.1:5500/social-proof-section-master/images/image-colton.jpg`,
@@ -29,13 +70,11 @@ const containerTemplate = (testimonial) =>
 <div class="feedback">${testimonial.feedback}</div>
 </div>`;
 
-let output = "";
+let testimonialOutput = "";
 
 for (const testimonial of testimonials){
     const filledTemplate = containerTemplate(testimonial);
-    output += filledTemplate;
+    testimonialOutput += filledTemplate;
 }
 
-console.log(output);
-
-document.getElementById("testimonials-container").innerHTML = output;
+document.getElementById("testimonials-container").innerHTML = testimonialOutput;
