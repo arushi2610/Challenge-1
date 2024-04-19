@@ -23,7 +23,7 @@ function repeatStars(){
 }
 
 const reviewTemplate = (review) => 
-`<div class="review"
+`<div class="review">
 <div class="stars">${repeatStars()}</div>
 <div class="rating">${review.rating}</div>
 </div>`;
